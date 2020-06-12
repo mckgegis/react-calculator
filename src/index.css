@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+* {
+  box-sizing: border-box;
+}
+.calculator {
+  width: 500px;
+  height: 700px;
+  display: grid;
+  border: 1px solid black;
+  padding: 20px;
+  row-gap: 15px;
+  /* column-gap: 2px; */
+  grid-template-rows: max-content 1fr;
+}
+
+.display {
+  padding: 50px;
+  border: 1px solid red;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px 10px;
+}
+
+.equal {
+  background-color: #40d9eb;
+}
+
+.symbol{
+  background-color: lightskyblue;
+}
+
+.buttons * {
+  border: 1px solid blue;
+  display: grid;
+  place-items: center;
+}
+
+/* .calculator .display {
+  grid-column: 1 / 5;
+} */
+
+.buttons .equal {
+  grid-row: 2 / 6;
+  grid-column: 4 / 5;
+}
